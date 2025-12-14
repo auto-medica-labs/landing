@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pioneering AI in Patient Care" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://landing.mdevd.co/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AUTO MEDICA Labs" />
+    <meta property="og:description" content="Pioneering AI in Patient Care" />
+    <meta
+      property="og:image"
+      content="https://r2.mdevd.co/asset/auto-medica-banner.png"
+    />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="landing.mdevd.co" />
+    <meta property="twitter:url" content="https://landing.mdevd.co/" />
+    <meta name="twitter:title" content="AUTO MEDICA Labs" />
+    <meta name="twitter:description" content="Pioneering AI in Patient Care" />
+    <meta
+      name="twitter:image"
+      content="https://r2.mdevd.co/asset/auto-medica-banner.png"
+    />
+
+    <title>AUTO MEDICA Labs - AI Implementation for Healthcare</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://r2.mdevd.co/asset/logo_transparent.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <img
+          src="asset/logo.png"
+          alt="AUTO MEDICA Labs Logo"
+          class="logo-img"
+        />
+        <!--<div>
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Research</a></li>
+                    </ul>
+                </div>-->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="sun"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Pioneering AI in Patient Care</h1>
+            <p>
+              We are a healthcare AI lab and consultancy, dedicated to
+              experimenting with and implementing cutting-edge AI solutions to
+              revolutionize patient care.
+            </p>
+            <a href="mailto:dheeto@mdevd.co" class="cta-button">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-services" class="content-section">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="values-grid">
+            <div class="value-item">
+              <h3>AI Strategy & Consulting</h3>
+              <p>
+                We help you navigate the complex world of AI in healthcare, from
+                identifying opportunities to creating a roadmap for
+                implementation.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>Custom AI Solutions</h3>
+              <p>
+                Our lab develops bespoke AI applications tailored to your
+                specific needs, from clinical decision support system to
+                operational automation.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>AI Integration & Implementation</h3>
+              <p>
+                We provide end-to-end support to ensure seamless integration of
+                AI solutions into your existing systems and workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-approach" class="content-section">
+        <div class="container">
+          <div class="content-grid reverse">
+            <div class="content-text">
+              <h2>Our Experimental Approach</h2>
+              <p>
+                As a dedicated AI lab, we are constantly experimenting with the
+                latest advancements in artificial intelligence. This allows us
+                to offer our clients innovative and future-proof solutions that
+                are at the forefront of medical technology.
+              </p>
+            </div>
+            <div class="content-image">
+              <img src="asset/discussion.jpg" alt="team discussion" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-focus" class="values">
+        <div class="container">
+          <h2>Our Focus</h2>
+          <div class="values-grid">
+            <div class="value-item">
+              <h3>Innovation</h3>
+              <p>
+                We are committed to pushing the boundaries of what's possible
+                with AI in healthcare, always seeking new and better ways to
+                improve patient outcomes.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>Collaboration</h3>
+              <p>
+                We work closely with healthcare professionals to ensure our
+                solutions are not only technologically advanced but also
+                practical, user-friendly, and truly meet the needs of the
+                medical community.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>Impact</h3>
+              <p>
+                Our ultimate goal is to make a tangible impact on the lives of
+                patients and the efficiency of healthcare systems through the
+                responsible and effective implementation of AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <i data-lucide="copyright"></i>
+        <p>2025 AUTO MEDICA Labs. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const body = document.body;
+
+      const currentTheme = localStorage.getItem("theme") || "light";
+      if (currentTheme === "dark") {
+        body.classList.add("dark-mode");
+        themeToggle.innerHTML = '<i data-lucide="moon"></i>';
+      } else {
+        themeToggle.innerHTML = '<i data-lucide="sun"></i>';
+      }
+      lucide.createIcons();
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          themeToggle.innerHTML = '<i data-lucide="moon"></i>';
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeToggle.innerHTML = '<i data-lucide="sun"></i>';
+          localStorage.setItem("theme", "light");
+        }
+        lucide.createIcons();
+      });
+    </script>
+  </body>
+</html>
+
