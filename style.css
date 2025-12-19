@@ -18,8 +18,7 @@
   --text-secondary: var(--body-text);
   --text-logo: var(--cyan-dark);
 
-  --sans-serif: "Inter", sans-serif;
-  --serif: "Roboto", serif;
+  --sans-serif: "Google Sans", sans-serif;
 }
 
 body.dark-mode {
@@ -186,11 +185,6 @@ nav div a:hover {
     TYPOGRAPHY
 -==============================*/
 h1,
-h2,
-h3 {
-  font-family: var(--serif);
-}
-
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -354,4 +348,3 @@ footer .container {
     gap: 2rem;
   }
 }
-
